@@ -4,8 +4,15 @@ import sys
 import unittest
 
 import test_jeni
+import test_jeni_decoration
+
 try:
     unittest.main(module=test_jeni)
+except SystemExit:
+    pass
+
+try:
+    unittest.main(module=test_jeni_decoration)
 except SystemExit:
     pass
 
